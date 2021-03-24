@@ -1,0 +1,296 @@
+body {
+  padding: 1%;
+  background-color: rgb(58, 62, 66);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* First section */
+
+.first-section {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 700px;
+  background-color: #1a1915;
+  background-image: url(../img/desktop_back.png);
+  background-size: cover;
+  color: #ffffff;
+  padding: 3.2% 2% 12% 2%;
+  box-sizing: border-box;
+
+  /* Градент вместе с изображением 
+  оказался не нужен :) */
+  /* background-image: linear-gradient(
+      to right,
+      rgba(26, 25, 21, 0.2) 0%,
+      rgba(26, 25, 21, 0.2) 100%
+    ),
+    url(../img/desktop_back.png);
+ */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 15% 0 15%;
+}
+
+.logo-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  /*  Межбуквенное расстояние в тексте */
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.links {
+  margin: 0;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-menu a:hover {
+  color: #fae5e5;
+}
+
+.sing-up {
+  cursor: pointer;
+  border: 2px solid white;
+  line-height: 35px;
+  padding: 8px 18px 8px 18px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.sing-up:hover {
+  border: 2px solid #fae5e5;
+}
+
+.first-section h1 {
+  font-family: Montserrat;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+
+.first-section p {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 0 35px 0;
+}
+
+.first-button {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ff4e50;
+  padding: 14px 25px 14px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.first-button:hover {
+  background-color: #df3d3f;
+}
+
+.first-content {
+  text-align: center;
+}
+
+/* Second section */
+
+.second-section {
+  max-width: 1440px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 5% 8% 2% 8%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.second-section h2 {
+  margin: 0 0 3% 0;
+  font-family: Montserrat;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333333;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.card {
+  margin: 0 5px 0 5px;
+  padding: 0;
+  width: 195px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #333333;
+}
+
+.card p {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #666666;
+}
+
+.ava {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.ava img {
+  display: block;
+  position: absolute;
+}
+
+.svg1 {
+  position: absolute;
+  left: 77px;
+  top: 77px;
+  background-image: url(../img/Shape\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+  width: 16px;
+  height: 16px;
+  background-color: #ff4e50;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.svg2 {
+  position: absolute;
+  left: 77px;
+  top: 77px;
+  background-image: url(../img/Shape\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+  width: 16px;
+  height: 16px;
+  background-color: #1cd7ad;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+  
+}
+
+.svg3 {
+  position: absolute;
+  left: 77px;
+  top: 77px;
+  background-image: url(../img/Shape\ 3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+  width: 16px;
+  height: 16px;
+  background-color: #ffa507;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.svg4 {
+  position: absolute;
+  left: 77px;
+  top: 77px;
+  background-image: url(../img/Shape\ 4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+  width: 16px;
+  height: 16px;
+  background-color: #4e73db;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.second-section button {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ff4e50;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  padding: 12px 30px 12px 30px;
+  cursor: pointer;
+}
+
+.second-section button:hover {
+  color: #e2474a;
+  background-color: #f8e3e3;
+  border: 2px solid #e2474a;
+}
+
+/* При наведении на карточку увеличиваем вложенный свг блок */
+.scale1:hover .svg1{
+  transition: 1s;
+  transform: scale(1.2);
+ }
+
+.scale2:hover .svg2{
+  transition: 1s;
+  transform: scale(1.2);
+ }
+
+.scale3:hover .svg3{
+  transition: 1s;
+  transform: scale(1.2);
+ }
+
+.scale4:hover .svg4{
+  transition: 1s;
+  transform: scale(1.2);
+ }
+
+
