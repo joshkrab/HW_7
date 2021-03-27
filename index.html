@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>HW_7</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -20,26 +21,58 @@
   <body>
     <!-- Fist Section -->
     <section class="first-section">
-      <nav class="nav-menu">
-        <div class="logo">
-          <a class="logo-link" href="#">URLAUBSGLÜCK</a>
+      <!-- Адаптив изображений -->
+      <picture class="img-pack">
+        <source
+          class="back-img"
+          srcset="./img/desktop_back.png"
+          type="image/png"
+          media="(min-width:769px)"
+        />
+        <source
+          class="back-img"
+          srcset="./img/tablet_back.png"
+          type="image/png"
+          media="(min-width:321px)"
+        />
+        <source
+          class="back-img"
+          srcset="./img/mobile_back.png"
+          type="image/png"
+          media="(max-width:321px)"
+        />
+
+        <img
+          class="back-img"
+          src="./img/desktop_back.png"
+          alt="background people"
+        />
+      </picture>
+
+      <div class="back">
+        <div class="flex-center">
+          <nav class="nav-menu">
+            <div class="logo">
+              <a class="logo-link" href="#">URLAUBSGLÜCK</a>
+            </div>
+
+            <div class="links">
+              <a href="#">Log in</a>
+              <a class="sing-up" href="#">Sign up</a>
+            </div>
+          </nav>
+
+          <div class="first-content">
+            <h1>
+              Share your <br />
+              holiday dreams
+            </h1>
+
+            <p>And find the perfect partner to fullfill it</p>
+
+            <a class="first-button" href="#">Find your holiday partner</a>
+          </div>
         </div>
-
-        <div class="links">
-          <a href="#">Log in</a>
-          <a class="sing-up" href="#">Sign up</a>
-        </div>
-      </nav>
-
-      <div class="first-content">
-        <h1>
-          Share your <br />
-          holiday dreams
-        </h1>
-
-        <p>And find the perfect partner to fullfill it</p>
-
-        <button class="first-button">Find your holiday partner</button>
       </div>
     </section>
 
@@ -63,8 +96,8 @@
             <div class="svg2"></div>
           </div>
 
-          <h3>Bradley Hunter</h3>
-          <p>Based in Chicago. I love playing tennis and loud music.</p>
+          <h3>Heather Walker</h3>
+          <p>I'm a happy person that loves cats and climbing on mountains.</p>
         </div>
         <div class="card scale3">
           <div class="ava">
@@ -72,8 +105,11 @@
             <div class="svg3"></div>
           </div>
 
-          <h3>Bradley Hunter</h3>
-          <p>Based in Chicago. I love playing tennis and loud music.</p>
+          <h3>Lucas Marsha</h3>
+          <p>
+            I get my inspiration from nature and objects around me. I have a
+            passion to colours, typography and skateboards.
+          </p>
         </div>
 
         <div class="card scale4">
@@ -82,13 +118,11 @@
             <div class="svg4"></div>
           </div>
 
-          <h3>Bradley Hunter</h3>
-          <p>Based in Chicago. I love playing tennis and loud music.</p>
+          <h3>Branda Hunty</h3>
+          <p>Based in Chicago. I love playing baseball and loud music.</p>
         </div>
-        
       </div>
-
-      <button>See other partners</button>
+      <a href="#">See other partners</a>
     </section>
   </body>
 </html>

@@ -11,35 +11,47 @@ p {
 /* First section */
 
 .first-section {
-  margin: 0 auto;
   max-width: 1440px;
-  height: 700px;
-  background-color: #1a1915;
-  background-image: url(../img/desktop_back.png);
-  background-size: cover;
-  color: #ffffff;
-  padding: 3.2% 2% 12% 2%;
   box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
 
-  /* Градент вместе с изображением 
-  оказался не нужен :) */
-  /* background-image: linear-gradient(
-      to right,
-      rgba(26, 25, 21, 0.2) 0%,
-      rgba(26, 25, 21, 0.2) 100%
-    ),
-    url(../img/desktop_back.png);
- */
+.img-pack {
+  display: block;
+  position: relative;
+  background-color: grey;
+}
+
+.back-img {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav-menu {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 15% 0 15%;
+  margin: 0 15% 8% 15%;
 }
 
 .logo-link {
@@ -48,7 +60,7 @@ p {
   color: #ffffff;
   font-family: Montserrat;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 2;
   font-weight: 700;
   /*  Межбуквенное расстояние в тексте */
   letter-spacing: 0.05em;
@@ -56,14 +68,14 @@ p {
 }
 
 .links {
-  margin: 0;
+  margin: 0 0 0 2%;
 }
 
 .links a {
   text-decoration: none;
   font-family: Montserrat;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 2;
   font-weight: 700;
   color: #ffffff;
 }
@@ -85,23 +97,26 @@ p {
   border: 2px solid #fae5e5;
 }
 
-.first-section h1 {
+.back h1 {
   font-family: Montserrat;
-  font-size: 52px;
+  /* font-size: 52px; */
+  /* font-size: calc(16px + 6 * (100vw / 1440)); */
+  font-size: calc(20px + 32 * (100vw / 1440));
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 0 40px 0;
+  margin: 0 0 2% 0;
 }
 
-.first-section p {
+.back p {
   font-family: Roboto;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: cacl(15px + 9 * (100vw / 1440));
   line-height: 1.2;
   font-weight: 300;
   color: #ffffff;
-  margin: 0 0 35px 0;
+  margin: 0 0 6% 0;
 }
 
 .first-button {
@@ -115,6 +130,7 @@ p {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .first-button:hover {
@@ -123,6 +139,7 @@ p {
 
 .first-content {
   text-align: center;
+  margin-bottom: 10%;
 }
 
 /* Second section */
@@ -131,21 +148,23 @@ p {
   max-width: 1440px;
   background-color: #ffffff;
   margin: 0 auto;
-  padding: 5% 8% 2% 8%;
+  padding: 5% 8% 10% 8%;
   text-align: center;
   box-sizing: border-box;
 }
 
 .second-section h2 {
-  margin: 0 0 3% 0;
+  margin: 0 0 2% 0;
   font-family: Montserrat;
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: calc(16px + 6 * (100vw / 1440));
   line-height: 1.2;
   font-weight: 700;
   color: #333333;
 }
 
 .card-box {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -153,7 +172,7 @@ p {
 }
 
 .card {
-  margin: 0 5px 0 5px;
+  margin: 5% 2% 5% 2%;
   padding: 0;
   width: 195px;
   height: 200px;
@@ -218,7 +237,6 @@ p {
   border: 4px solid #ffffff;
   border-radius: 50%;
   padding: 12px;
-  
 }
 
 .svg3 {
@@ -253,8 +271,9 @@ p {
   padding: 12px;
 }
 
-.second-section button {
+.second-section a {
   font-family: Montserrat;
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 700;
@@ -264,33 +283,57 @@ p {
   border-radius: 20px;
   padding: 12px 30px 12px 30px;
   cursor: pointer;
+  margin-bottom: 5%;
 }
 
-.second-section button:hover {
+.second-section a:hover {
   color: #e2474a;
   background-color: #f8e3e3;
   border: 2px solid #e2474a;
 }
 
 /* При наведении на карточку увеличиваем вложенный свг блок */
-.scale1:hover .svg1{
+.scale1:hover .svg1 {
   transition: 1s;
   transform: scale(1.2);
- }
+}
 
-.scale2:hover .svg2{
+.scale2:hover .svg2 {
   transition: 1s;
   transform: scale(1.2);
- }
+}
 
-.scale3:hover .svg3{
+.scale3:hover .svg3 {
   transition: 1s;
   transform: scale(1.2);
- }
+}
 
-.scale4:hover .svg4{
+.scale4:hover .svg4 {
   transition: 1s;
   transform: scale(1.2);
- }
+}
 
+/* Tablet version */
 
+@media (max-width: 768px) {
+  .nav-menu {
+    margin: 0 12% 16% 12%;
+    justify-content: space-around;
+  }
+  .back h1 {
+    margin: 0 0 6% 0;
+  }
+
+  .back p {
+    margin: 0 0 10% 0;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 320px) {
+  .nav-menu {
+    justify-content: space-around;
+  }
+  
+}
