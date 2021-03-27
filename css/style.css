@@ -336,4 +336,8 @@ p {
     justify-content: space-around;
   }
   
+  .card {
+    margin: 5% 2% 10% 2%;
+     }
+  
 }
