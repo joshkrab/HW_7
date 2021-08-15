@@ -1,1 +1,1 @@
-Small responsive project
+Small responsive project/pure css
