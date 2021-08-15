@@ -1,1 +1,1 @@
-# HW_7
+Small responsive project
